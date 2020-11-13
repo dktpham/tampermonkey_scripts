@@ -12,7 +12,9 @@
     'use strict';
     let faviconMap = new Map([
         ["jira.de.nortal.com", "https://cdn.worldvectorlogo.com/logos/jira-1.svg"],
-        ["confluence.de.nortal.com", "https://seeklogo.com/images/C/confluence-logo-D9B07137C2-seeklogo.com.png"]]);
+        ["confluence.de.nortal.com", "https://seeklogo.com/images/C/confluence-logo-D9B07137C2-seeklogo.com.png"],
+        ["bamboo-ci.infra.scag", "http://bamboo.schuetze.infra/s/de_DE/51315/1/_/images/icons/favicon.ico"]
+    ]);
     let host = window.location.host;
     if (faviconMap.has(host)) {
         document.querySelector('link[rel="shortcut icon"]').setAttribute("href", faviconMap.get(host));
